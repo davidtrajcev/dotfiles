@@ -1,0 +1,9 @@
+{
+  "name": "Dotfiles",
+  "extensions": ["your-extensions-if-any"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "mounts": ["source=/home/codespace/.dotfiles,target=/dotfiles,type=bind,consistency=cached"],
+  "postCreateCommand": "ln -s /dotfiles/.bashrc /home/codespace/.bashrc"
+}
